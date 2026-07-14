@@ -1,11 +1,12 @@
-#libraries
-pip install pandas
-pip install requests
-pip install sqlalchemy
-pip install pymysql
-pip install mysql-connector-python
-pip install plotly
-pip install streamlit
+streamlit
+pandas
+numpy
+plotly
+sqlalchemy
+pymysql
+python-dotenv
+scikit-learn
+joblib
 
 streamlit>=1.45.0
 pandas>=2.2.0
