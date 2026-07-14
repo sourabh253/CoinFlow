@@ -1,5 +1,10 @@
-MYSQL_HOST = "hayabusa.proxy.rlwy.net"
-MYSQL_PORT = 28152
-MYSQL_USER = "root"
-MYSQL_PASSWORD = "CEefiXgUpPwPMfLpIjVeyTNlNPKtYguC"
-MYSQL_DB = "cryptopulse"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+MYSQL_HOST = os.getenv("MYSQL_HOST", "localhost")
+MYSQL_PORT = int(os.getenv("MYSQL_PORT", "3306"))
+MYSQL_USER = os.getenv("MYSQL_USER", "root")
+MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD", "root123")
+MYSQL_DB = os.getenv("MYSQL_DB", "cryptopulse")
